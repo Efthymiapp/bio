@@ -1,47 +1,79 @@
+/* Γενικά Στυλ */
 body {
     background-color: #0e153a;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    text-align: center;
-    padding: 20px;
+    text-align: left;
+    margin: 100px 100px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+h1 {
+    font-size: 4rem;
+    margin: 0;
 }
 
-nav ul li {
-    margin: 0 15px;
+.highlight {
+    color: #f72585;
 }
 
-nav ul li a {
-    color: white;
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+a {
+    color: #f72585;
     text-decoration: none;
 }
 
-.certification-card {
-    background-color: #1a2238;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
+a:hover {
+    text-decoration: underline;
 }
 
-button {
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
     background-color: #f72585;
     color: white;
-    border: none;
-    padding: 10px;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-button:hover {
+.button:hover {
     background-color: #d4145a;
 }
+
+/* Navigation Στυλ */
+nav {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #f72585;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
